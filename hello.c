@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 int main(){
-
-	printf("Hello World");
+	char name[] = "Dr Ayinla";
+	printf("Hello World, %s\n",name);
 	return 0;
 }
 

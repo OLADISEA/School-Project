@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 
 double root1;
@@ -8,7 +9,7 @@ void solveQuadratic(); //Global declaration of a function to solve the quadratic
 
 int main() { 
 
-    solveQuadratic();
+    solveQuadratic(); //calling the function
     
     return 0;
 }
@@ -29,6 +30,7 @@ void solveQuadratic(){
     printf("Enter the third number: ");
     scanf("%lf", &third_num);
 
+    //Getting the result for the determinant and each root
     double determinant = sqrt(pow(second_num, 2) - (4 * first_num * third_num));
     root1 = (-second_num + determinant)/2 * first_num;
     root2 = (-second_num - determinant)/2 * first_num;
@@ -47,6 +49,6 @@ void solveQuadratic(){
     if(determinant < 0){
         printf("The roots are unreal and unequal\n");
     }
-    // The below will display each roots in form of two decimal places 
+    // The function below will display each roots in form of two decimal places 
     printf("the roots are %.2f and %.2f\n",root1,root2);
 }
