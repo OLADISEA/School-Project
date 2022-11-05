@@ -10,10 +10,10 @@ int main() {
     //The first loop stores the studends names
     for(int i = 0; i<size; i++){
         printf("Enter the name of Student %d: ",i+1);
-        scanf("%s",s[i].name);
+        fgets(s[i].name,50,stdin);
     }
 
-    printf("The names of the Students are: ");
+    printf("The names of the Students are:\n");
     //This loop below prints out all the students names
     for(int i = 0; i<size; i++){
         printf("Student %d: %s\n",i+1,s[i].name);
